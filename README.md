@@ -1,9 +1,6 @@
-# Template for Backend Express
+# LOTR API
 
-The Golden Rule:
-🦸 🦸‍♂️ Stop starting and start finishing. 🏁
-
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+`TODO: fill in routes`
 
 ## Scripts
 
