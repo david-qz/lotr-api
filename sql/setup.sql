@@ -6,13 +6,13 @@ create table characters (
     id bigint generated always as identity,
     name varchar(255) not null,
     age varchar(255) not null,
-    birth_year varchar(255) not null,
-    death_year varchar(255) not null,
+    birth varchar(255) not null,
+    death varchar(255) not null,
     race varchar(255) not null
 );
 
 -- Note to self: ring was destroyed March 25, 3019
-insert into characters (name, age, birth_year, death_year, race) values
+insert into characters (name, age, birth, death, race) values
     (
         'Frodo Baggins',
         '50',
