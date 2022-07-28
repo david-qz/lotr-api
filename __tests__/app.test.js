@@ -30,8 +30,8 @@ describe('/characters router', () => {
             id: expect.any(String),
             name: expect.any(String),
             age: expect.any(String),
-            birthYear: expect.any(String),
-            deathYear: expect.any(String),
+            birth: expect.any(String),
+            death: expect.any(String),
             race: expect.any(String),
         });
     });
