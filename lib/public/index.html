@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .mono {
+            font-family: monospace;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+    <title>LOTR API</title>
+</head>
+<body>
+    <h1>LOTR API</h1>
+    <h2>Routes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Route</th>
+                <th>Description</th>
+                <th>Example URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mono">/characters</td>
+                <td>Gets a list of LOTR characters with name and id.</td>
+                <td class="mono"><a href="/characters">/characters</a></td>
+            </tr>
+            <tr>
+                <td class="mono">/characters/:id</td>
+                <td>Gets details about a particular character.</td>
+                <td class="mono"><a href="/characters/1">/characters/1</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
