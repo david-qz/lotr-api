@@ -50,7 +50,7 @@ insert into characters (name, age, birth, death, race) values
     ),
     (
         'Gandalf',
-        '3019',
+        '>3019',
         'Before the Shaping or Arda',
         'Immortal',
         'Maia of Manwë (One of the Istari)'
