@@ -22,6 +22,20 @@ describe('/characters router', () => {
         }
     });
 
+    test('/characters/:id should get all info on single character', async () => {
+        const res = await request(app).get('/characters/1');
+        const character = res.body;
+
+        expect(character).toEqual({
+            id: expect.any(String),
+            name: expect.any(String),
+            age: expect.any(String),
+            birthYear: expect.any(String),
+            deathYear: expect.any(String),
+            race: expect.any(String),
+        });
+    });
+
     afterAll(() => {
         pool.end();
     });
