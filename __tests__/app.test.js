@@ -3,13 +3,25 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 
-describe('backend-express-template routes', () => {
+describe('/characters router', () => {
     beforeEach(() => {
         return setup(pool);
     });
-    it('example test - delete me!', () => {
-        expect(1).toEqual(1);
+
+    test('/characters should list all characters', async () => {
+        const res = await request(app).get('/characters');
+        const characters = res.body;
+
+        expect(characters.length).toEqual(9);
+
+        for (const c of characters) {
+            expect(c).toEqual({
+                id: expect.any(String),
+                name: expect.any(String)
+            });
+        }
     });
+
     afterAll(() => {
         pool.end();
     });
